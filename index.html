@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariam | Backend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#about" aria-label="Mariam Ebrahim, home">
+      <span class="brand-logo">ME</span>
+      <span class="brand-name">Mariam Ebrahim</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+
+  <main>
+    
+    
+<section id="about">
+  <h1>Mariam Ebrahim</h1>
+  <p class="subtitle">Backend Developer | .NET</p>
+
+  <div class="about-content">
+         <p>
+        I am a recent Computer Science graduate with a passion for backend
+        development. I am particularly interested in building real-world
+        applications that are secure, scalable, and well-structured using
+        .NET or any other backend framework.
+      </p>
+      <p>
+        I care deeply about the quality of what I build, and I am always
+        looking to deepen my understanding, whether that is through a new
+        project, a new technology, or simply a problem worth solving.
+        Software engineering is not just a career path for me. It is a field
+        I truly love, and that drives me to keep growing every single day.
+      </p>
+      <p>
+        I am currently open to junior backend developer opportunities where
+        I can contribute, learn, and be part of something meaningful.
+      </p>
+
+    <h3>Education</h3>
+<p>
+        <strong>Faculty of Computer and Information, Assiut University</strong><br>
+        Bachelor's degree in Information Systems, 2021 to 2025<br>
+        GPA 3.95/4.0 (A with Honors), ranked first in my batch<br>
+        Graduation project: A+
+      </p>
+  </div>
+</section>
+
+
+
+    
+<section id="experience">
+  <h2>Experience</h2>
+
+  <article class="card">
+    <h3>.NET Intern</h3>
+    <p class="meta">Huma Volve · Remote · Oct 2026</p>
+  </article>
+
+  <article class="card">
+    <h3>LLM Intern</h3>
+    <p class="meta">Tips Hindawi (Edrak for AI) · Remote · Aug 2026 to Oct 2026</p>
+    <p>
+      Completed an LLM program covering transformers, RAG, LangChain,
+      quantization and fine-tuning, and built Video_Talky.
+    </p>
+  </article>
+
+  <article class="card">
+    <h3>Coding Instructor</h3>
+    <p class="meta">iSchool · Part-time, remote · Apr 2026 to Sep 2026</p>
+    <p>
+      Taught project-based coding sessions to Grade 5 students as part
+      of the Digital Egypt Marvels Initiative (DEMI).
+    </p>
+  </article>
+
+  <article class="card">
+    <h3>Application Developer Intern</h3>
+    <p class="meta">EJADA · On-site, New Assiut · Jul 2024 to Aug 2024</p>
+    <p>Assisted in developing API integrations for enterprise applications.</p>
+  </article>
+</section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+            <article class="card">
+        <h3>Video_Talky</h3>
+        <p>
+          Chat with a YouTube video, read a sectioned summary, take a quiz
+          and find similar videos. Works with Arabic and English videos, and
+          every answer links back to a moment in the video. Built during my
+          LLM internship at Tips Hindawi (Edrak for AI).
+        </p>
+        <p><strong>Tech:</strong> Python, Streamlit, LangChain, Hugging Face
+          (Qwen2.5-7B 4-bit, Whisper), FAISS, FastAPI, ngrok</p>
+        <p><strong>What I learned:</strong> RAG, embeddings and vector search,
+          running quantized models, and serving models through an API.
+          I also cut quiz generation from about 80 s to about 50 s by
+          batching prompts on the GPU.</p>
+        <p><strong>What's still missing:</strong> Deployment. The models run
+          on a free Kaggle GPU, so there is no always-on live demo yet.</p>
+               <video controls preload="metadata">
+          <source src="media/video-talky-demo.mp4" type="video/mp4">
+        </video>
+        <div class="project-footer">
+        <a
+            href="https://github.com/Mariam-Ebrahim/Video_Talky"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub →
+        </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Recommendy</h3>
+        <p>
+          An AI-powered platform that connects students with internships
+          and scholarships. This was my graduation project, built with a
+          team, and I built the admin side of it.
+        </p>
+        <p><strong>Tech:</strong> .NET 8, ASP.NET Web API,
+          Entity Framework Core, SQL Server</p>
+        <p><strong>My part:</strong></p>
+        <ul>
+          <li>20+ RESTful endpoints for admin operations, organization
+            verification and platform statistics</li>
+          <li>Full CRUD APIs for users, organizations and opportunities</li>
+          <li>An organization verification system that blocks fraudulent
+            listings</li>
+          <li>An admin statistics endpoint that returns the platform's
+            live counts for the dashboard</li>
+        </ul>
+        <video controls preload="metadata">
+            <source src="media/recommendy-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="project-footer">
+        <a href="https://github.com/Mariam-Ebrahim/Recommendy"
+            target="_blank"
+            rel="noopener noreferrer">GitHub →</a>
+        </div>
+      </article>
+    </section>
+        <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <p class="tags">
+          <span>C#</span><span>ASP.NET Web API</span><span>ASP.NET MVC</span><span>Clean Architecture and CQRS</span>
+          <span>Entity Framework Core</span><span>LINQ</span><span>RESTful APIs</span>
+          <span>OOP</span>
+        </p>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <p class="tags">
+          <span>SQL Server</span><span>MySQL</span><span>PostgreSQL</span>
+          <span>MongoDB</span><span>Database Design</span>
+        </p>
+      </div>
+      <div class="skill-group">
+        <h3>LLM and AI</h3>
+        <p class="tags">
+          <span>RAG</span><span>LangChain</span><span>FAISS</span>
+          <span>Embeddings</span><span>Quantization</span><span>Python</span>
+        </p>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <p class="tags">
+          <span>Git and GitHub</span><span>Postman</span><span>Swagger</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+
+      <h3>Technical</h3>
+      <div class="cert-grid">
+        <figure class="cert">
+          <a href="certificates/llm-internship.jpg" target="_blank" rel="noopener">
+            <img src="certificates/llm-internship.jpg" alt="Large Language Model Internship certificate, Edrak for AI" loading="lazy">
+          </a>
+          <figcaption><strong>Large Language Model Internship</strong><br>Edrak for AI · Oct 2026 · 126 hours</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/csharp-freecodecamp.jpg" target="_blank" rel="noopener">
+            <img src="certificates/csharp-freecodecamp.jpg" alt="Foundational C# with Microsoft certificate, freeCodeCamp" loading="lazy">
+          </a>
+          <figcaption><strong>Foundational C# with Microsoft</strong><br>freeCodeCamp · Nov 2025</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/sql-intermediate.jpg" target="_blank" rel="noopener">
+            <img src="certificates/sql-intermediate.jpg" alt="SQL Intermediate certificate, HackerRank" loading="lazy">
+          </a>
+          <figcaption><strong>SQL (Intermediate)</strong><br>HackerRank · Oct 2025</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/sql-basic.jpg" target="_blank" rel="noopener">
+            <img src="certificates/sql-basic.jpg" alt="SQL Basic certificate, HackerRank" loading="lazy">
+          </a>
+          <figcaption><strong>SQL (Basic)</strong><br>HackerRank · Oct 2025</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/databases-manara.jpg" target="_blank" rel="noopener">
+            <img src="certificates/databases-manara.jpg" alt="Databases certificate, Manara" loading="lazy">
+          </a>
+          <figcaption><strong>Databases</strong><br>Manara · Oct 2025</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/git-github.jpg" target="_blank" rel="noopener">
+            <img src="certificates/git-github.jpg" alt="Git and GitHub certificate, Almdrasa" loading="lazy">
+          </a>
+          <figcaption><strong>Git and GitHub</strong><br>Almdrasa · Oct 2025</figcaption>
+        </figure>
+      </div>
+      <h3>Teaching, English and other</h3>
+      <div class="cert-grid">
+        <figure class="cert">
+          <a href="certificates/cs-instructor-grade5-sem1.jpg" target="_blank" rel="noopener">
+            <img src="certificates/cs-instructor-grade5-sem1.jpg" alt="Computer Science Course Instructor Grade 5 Semester 1 certificate, iSchool" loading="lazy">
+          </a>
+          <figcaption><strong>Computer Science Course Instructor, Grade 5 (Semester 1)</strong><br>iSchool · Jun 2026</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/cs-instructor-grade5-sem2.jpg" target="_blank" rel="noopener">
+            <img src="certificates/cs-instructor-grade5-sem2.jpg" alt="Computer Science Course Instructor Grade 5 Semester 2 certificate, iSchool" loading="lazy">
+          </a>
+          <figcaption><strong>Computer Science Course Instructor, Grade 5 (Semester 2)</strong><br>iSchool · Jun 2026</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/grade5-engagement.jpg" target="_blank" rel="noopener">
+            <img src="certificates/grade5-engagement.jpg" alt="Grade 5 Engagement Sessions certificate, iSchool" loading="lazy">
+          </a>
+          <figcaption><strong>Grade 5 Engagement Sessions</strong><br>iSchool · Sep 2026</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/ef-set-english.jpg" target="_blank" rel="noopener">
+            <img src="certificates/ef-set-english.jpg" alt="EF SET English Certificate, 61 out of 100, C1 Advanced" loading="lazy">
+          </a>
+          <figcaption><strong>EF SET English Certificate: 61/100 (C1 Advanced)</strong><br>Nov 2025</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/professional-english-manara.jpg" target="_blank" rel="noopener">
+            <img src="certificates/professional-english-manara.jpg" alt="Professional English for Software Engineers certificate, Manara" loading="lazy">
+          </a>
+          <figcaption><strong>Professional English for Software Engineers</strong><br>Manara</figcaption>
+        </figure>
+        <figure class="cert">
+          <a href="certificates/mckinsey-forward.jpg" target="_blank" rel="noopener">
+            <img src="certificates/mckinsey-forward.jpg" alt="McKinsey.org Forward Program certificate" loading="lazy">
+          </a>
+          <figcaption><strong>McKinsey.org Forward Program</strong><br>McKinsey and Company · Dec 2025</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>I am open to junior backend developer opportunities.</p>
+      <ul class="contact-links">
+        <li>
+          <a href="mailto:mariamebrahim0125@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>Email</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/mariam-ebrahim2002">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Mariam-Ebrahim">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>

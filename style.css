@@ -1,0 +1,430 @@
+
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --heading: #f0f6fc;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+}
+
+/* Main layout */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+section {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: var(--heading);
+  font-size: 2.6rem;
+}
+
+h2 {
+  margin: 0 0 24px;
+  color: var(--accent);
+  font-family: Consolas, monospace;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 24px 0 8px;
+  color: var(--heading);
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  color: var(--accent);
+  font-family: Consolas, monospace;
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* General cards */
+.card {
+  min-width: 0;
+  padding: 24px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Experience */
+#experience .card {
+  margin-bottom: 18px;
+}
+
+.meta {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-family: Consolas, monospace;
+  font-size: 0.85rem;
+}
+
+
+
+/* Skills */
+#skills .skill-group {
+  margin-bottom: 28px;
+}
+
+#skills .skill-group h3 {
+  margin: 0 0 14px;
+  color: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+#skills .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+}
+
+#skills .tags span {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 8px 14px;
+  background: #19283b;
+  border: 1px solid #304765;
+  border-radius: 8px;
+  color: #c9e0ff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+#skills .tags span:hover {
+  background: #243d5c;
+  border-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Certificates */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cert {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.cert img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background-color: var(--bg);
+}
+
+.cert figcaption {
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+/* Contact */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 22px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-links a:hover {
+  background-color: #1c2635;
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.contact-links svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 44px 0;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Projects layout */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+#projects > h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+#projects .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+}
+
+#projects .card h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+#projects .card p {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+#projects .card ul {
+  margin: 8px 0 14px;
+  padding-left: 22px;
+}
+
+#projects .card li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* Video stays in the normal content flow */
+#projects .card video {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  margin-top: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Align the GitHub link toward the bottom */
+#projects .project-footer {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+#projects .project-footer a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#projects .project-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Smaller screens */
+@media (max-width: 760px) {
+  #projects {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #projects > h2 {
+    grid-column: 1;
+  }
+
+  #projects .card {
+    padding: 18px;
+  }
+}
+
+
+/* Header and navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(13, 17, 23, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.navbar {
+  max-width: 1200px;
+  min-height: 68px;
+  margin: 0 auto;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: var(--heading);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-family: Consolas, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--accent);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 12px 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-name {
+    font-size: 0.92rem;
+  }
+
+  .nav-links {
+    gap: 10px 14px;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+}
+
+/* About */
+#about h1 {
+  margin-bottom: 4px;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  letter-spacing: -0.7px;
+}
+
+#about .subtitle {
+  margin: 0 0 26px;
+}
+
+#about .about-content {
+  max-width: 780px;
+}
+
+#about .about-content p {
+  line-height: 1.8;
+}
+
+#about .about-content h3 {
+  margin-top: 30px;
+}
